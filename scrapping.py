@@ -22,9 +22,9 @@ def getNews():
                     for image in images.split(','):
                         listImages.append('https://content.kufar.by/line_thumbs' + image)
                 if (price != None):
-                    price = float(price.getText().split(' ')[0].replace(',', '.'))
+                    price = float(price.getText().split(' р.')[0].replace(',', '.').replace(' ', ''))
                 else:
-                    price = 'Без цены'
+                    price = 0
                 result.append({
                     "title": title,
                     "link": link,
