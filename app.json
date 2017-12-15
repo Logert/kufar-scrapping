@@ -1,0 +1,16 @@
+{
+  "name": "kufar-scrapping",
+  "scripts": {
+    "postdeploy": "bot.py"
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
